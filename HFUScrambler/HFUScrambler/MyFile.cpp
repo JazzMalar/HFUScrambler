@@ -16,23 +16,32 @@ using namespace std;
 
 CMyFile::CMyFile()
 {
-	m_pReadStream = new ifstream("");
-	m_pWriteStream = new ofstream("");
+	m_pReadStream = NULL;
+	m_pWriteStream = NULL;
 }
 
 
 CMyFile::~CMyFile()
 {
-	delete m_pReadStream;
-	delete m_pWriteStream;
+	if (!m_pReadStream == NULL)
+	{
+		delete m_pReadStream;
+	}
+	if (!m_pWriteStream ==NULL)
+	{
+		delete m_pWriteStream;
+	}
+	
 	m_pReadStream = NULL;
 	m_pWriteStream = NULL;
 }
 
 int CMyFile::OpenForRead(string path)
 {
+	m_pReadStream = new ifstream(path, ios::in | ios::binary);
+	//m_pReadStream = new ifstream("");
+	//m_pReadStream->open(path, ios::in | ios::binary);
 	
-	m_pReadStream->open(path, ios::in | ios::binary);
 	if (m_pReadStream->is_open())
 	{
 		return 0;//No Error: Is Sucess
@@ -42,7 +51,9 @@ int CMyFile::OpenForRead(string path)
 }
 int CMyFile::OpenForWrite(string path)
 {
-	m_pWriteStream ->open(path, ios::binary|ofstream::out);
+	m_pWriteStream = new ofstream(path, ios::binary | ofstream::out);
+	//m_pWriteStream = new ofstream("");
+	//m_pWriteStream ->open(path, ios::binary|ofstream::out);
 	if (m_pWriteStream->is_open())
 	{
 	return 0;//No Error: Is Success
