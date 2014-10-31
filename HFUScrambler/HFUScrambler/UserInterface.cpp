@@ -20,10 +20,23 @@ CUserInterface::CUserInterface(){
 	std::cin >> opt_check;
 	if (opt_check == 1)
 	{
-		std::cout << "Geben Sie den Verzeichnispfad an und druecken Sie Enter:" << endl;
+		std::cout << "Geben Sie den Verzeichnispfad ein und druecken Sie Enter:" << endl;
+		std::cout << "!!Hinweis Verzeichnispfad darf keine leerzeichen enthalten!!" << endl;
 		std::cin >> path;
-		std::cout << "Rueckgabe Pfad an:" << path << endl;
+		std::cout << "Geben Sie den Schluessel an ein druecken Sie Enter:" << endl;
+		std::cin >> key;
 	}
+	else if (opt_check==2)
+	{
+		std::cout << "Geben Sie den Verzeichnispfad ein und druecken Sie Enter:" << endl;
+		std::cout << "!!Hinweis Verzeichnispfad darf keine leerzeichen enthalten!!" << endl;
+		std::cin >> path;
+		std::cout << "Geben Sie den Schluessel ein und druecken Sie Enter:" << endl;
+		std::cin >> key;
+
+	}
+
+
 }
 
 
