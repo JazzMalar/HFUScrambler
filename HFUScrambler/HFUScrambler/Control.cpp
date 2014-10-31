@@ -23,6 +23,8 @@ int CControl::encryptFile(string& file, string& key)
 	 
 	this->Scrambler->Encrypt((*(Data->m_pReadStream)), (*(Data->m_pWriteStream)), key); 
 
+	this->Data->write(); 
+
 	return 0; 
 
 }
