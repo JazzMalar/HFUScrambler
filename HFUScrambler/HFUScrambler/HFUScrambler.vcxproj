@@ -80,6 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Chiffre\Chiffre\Control.h" />
+    <ClInclude Include="..\..\..\Fakultaet\Chiffre\Chiffre\Data.h" />
+    <ClInclude Include="..\..\..\Fakultaet\Chiffre\Chiffre\MyFile.h" />
     <ClInclude Include="CSA_one.h" />
     <ClInclude Include="CSA_two.h" />
     <ClInclude Include="CScrAlgo.h" />
@@ -95,6 +97,8 @@
     <ClCompile Include="CSA_two.cpp" />
     <ClCompile Include="CScrAlgo.cpp" />
     <ClCompile Include="CScrambler.cpp" />
+    <ClCompile Include="..\..\..\Fakultaet\Chiffre\Chiffre\Data.cpp" />
+    <ClCompile Include="..\..\..\Fakultaet\Chiffre\Chiffre\MyFile.cpp" />
     <ClCompile Include="HFUScrambler.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
