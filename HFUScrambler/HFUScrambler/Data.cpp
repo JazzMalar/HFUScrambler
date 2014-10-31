@@ -16,6 +16,8 @@ CData::CData()
 {
 	m_pReadStream = NULL;
 	m_pWriteStream = NULL;
+	fileInputBuffer = NULL;
+	fileOutputBuffer = NULL;
 }
 
 
