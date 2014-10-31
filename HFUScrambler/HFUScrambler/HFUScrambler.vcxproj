@@ -79,9 +79,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Chiffre\Chiffre\Control.h" />
     <ClInclude Include="..\..\..\Fakultaet\Chiffre\Chiffre\Data.h" />
     <ClInclude Include="..\..\..\Fakultaet\Chiffre\Chiffre\MyFile.h" />
+    <ClInclude Include="Control.h" />
     <ClInclude Include="CSA_one.h" />
     <ClInclude Include="CSA_two.h" />
     <ClInclude Include="CScrAlgo.h" />
@@ -92,7 +92,7 @@
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Chiffre\Chiffre\Control.cpp" />
+    <ClCompile Include="Control.cpp" />
     <ClCompile Include="CSA_one.cpp" />
     <ClCompile Include="CSA_two.cpp" />
     <ClCompile Include="CScrAlgo.cpp" />
