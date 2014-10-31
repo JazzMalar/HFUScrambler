@@ -33,4 +33,6 @@ int CControl::decryptFile(string& file, string& key)
 	this->Data->OpenForWrite(file.substr(0, file.length() - FileExtension.length()));
 
 	this->Scrambler->Decrypt((*(Data->m_pReadStream)), (*(Data->m_pWriteStream)), key); 
+
+	return 0; 
 }
