@@ -9,6 +9,10 @@
 using namespace std;
 class CData
 {
+private:
+	filebuf fileInputBuffer;
+	filebuf fileOutputBuffer;
+
 public:
 	istream *m_pReadStream;
 	ostream *m_pWriteStream;
