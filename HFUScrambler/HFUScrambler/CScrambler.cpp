@@ -1,9 +1,10 @@
 #include "stdafx.h"
 #include "CScrambler.h"
-
+#include "CSA_one.h"
 
 CScrambler::CScrambler()
 {
+	Algo = new CSA_one;
 }
 
 

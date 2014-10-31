@@ -1,5 +1,8 @@
 #pragma once
 #include <iostream>
+//#include "CSA_one.h"
+//#include "CSA_two.h"
+
 using namespace std;
 
 class CScrAlgo

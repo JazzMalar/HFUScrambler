@@ -14,7 +14,7 @@ using namespace std;
 #define CSA_SHOW_INTERN_INFO
 #endif
 
-class CSA_one:
+class CSA_one :
 	public CScrAlgo
 {
 public:
