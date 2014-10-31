@@ -14,15 +14,15 @@ using namespace std;
 CUserInterface::CUserInterface(){
 	CControl control;
 	int opt_check;
-	std::cout << "Projektarbeit Scrambler: "<< endl;
-	std::cout << "Druecken Sie fuer Datei kodieren die Nummer 1:" << endl;
-	std::cout << "Druecken Sie fuer Datei dekodieren die Nummer 2:" << endl;
+	std::cout << "Projektarbeit Scrambler: " << endl;
+	std::cout << "Druecken Sie fuer Datei kodieren die Nummer 1 und druecken Sie Enter:" << endl;
+	std::cout << "Druecken Sie fuer Datei dekodieren die Nummer 2 und druecken Sie Enter:" << endl;
 	std::cin >> opt_check;
 	if (opt_check == 1)
 	{
-		std::cout << "Geben Sie verzeichnis Pfad an und druecken Sie Enter:" << endl;
+		std::cout << "Geben Sie den Verzeichnispfad an und druecken Sie Enter:" << endl;
 		std::cin >> path;
-		std::cout << "Rueckgabe Pfad an:"<< path << endl;
+		std::cout << "Rueckgabe Pfad an:" << path << endl;
 	}
 }
 
