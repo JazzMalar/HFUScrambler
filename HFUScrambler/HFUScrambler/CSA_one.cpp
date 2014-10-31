@@ -19,13 +19,19 @@ int CSA_one::Encrypt(istream& input, ostream& output, std::string& key)
 	int iShiftValue = 0;
 	int iTemp;
 	int iStreamValue;
-
+#ifdef CSA_SHOW_INTERN_INFO
+	cout << "START with ENCRYPTING-------------------------------------------------------" << endl;
+#endif
 	iShiftValue = getShiftValue(key);
 
 
 	while (!(input.eof()))
 	{
 		iStreamValue = input.get();
+
+#ifdef CSA_SHOW_INTERN_INFO
+		cout << "in : " << iStreamValue << "in : "<< (char)iStreamValue << endl;
+#endif
 		if (input.bad())
 		{
 			cout << "bad!" << endl;
@@ -61,8 +67,11 @@ int CSA_one::Encrypt(istream& input, ostream& output, std::string& key)
 		{
 			cout << "Errror!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
 		}
-		cout << iTemp << endl;  //get int value
+		//cout << iTemp << endl;  //get int value
 		output.put(iTemp);
+#ifdef CSA_SHOW_INTERN_INFO
+		cout << "out : " << iTemp << "out : " << (char)iTemp << endl;
+#endif
 	}
 	return 0;
 }
@@ -74,7 +83,9 @@ int CSA_one::Decrypt(istream& input, ostream& output, std::string& key)
 	int iTemp;
 	int iStreamValue;
 
-
+#ifdef CSA_SHOW_INTERN_INFO
+	cout << "START with DECRYPTING-------------------------------------------------------" << endl;
+#endif
 
 	iShiftValue = getShiftValue(key);
 
@@ -84,6 +95,10 @@ int CSA_one::Decrypt(istream& input, ostream& output, std::string& key)
 	{
 
 		iStreamValue = input.get();
+
+#ifdef CSA_SHOW_INTERN_INFO
+		cout << "in : " << iStreamValue << "in : " << (char)iStreamValue << endl;
+#endif
 		if (input.bad())
 		{
 			cout << "bad!" << endl;
@@ -120,8 +135,11 @@ int CSA_one::Decrypt(istream& input, ostream& output, std::string& key)
 		{
 			cout << "Errror!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
 		}
-		cout << iTemp << endl;  //get int value
+		//cout << iTemp << endl;  //get int value
 		output.put(iTemp);
+#ifdef CSA_SHOW_INTERN_INFO
+		cout << "out : " << iTemp << "out : " << (char)iTemp << endl;
+#endif
 	}
 	return 0;
 }

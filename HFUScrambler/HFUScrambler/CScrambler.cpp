@@ -28,7 +28,7 @@ int CScrambler::Decrypt(istream& input, ostream& output, std::string& key)
 	int iOut = -1;
 	if (Algo)
 	{
-		iOut = Algo->Encrypt(input, output, key);
+		iOut = Algo->Decrypt(input, output, key);
 	}
 	return iOut;
 }
