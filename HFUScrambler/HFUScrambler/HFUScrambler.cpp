@@ -2,10 +2,11 @@
 //
 
 #include "stdafx.h"
-
+#include "UserInterface.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	CUserInterface userinterface;
 	return 0;
 }
 
