@@ -3,11 +3,6 @@
 
 using namespace std;
 
-
-class CScrambler; 
-class CData; 
-
-
 class CControl
 {
 
