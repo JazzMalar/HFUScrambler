@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "CScrambler.h"
+#include "Data.h"
 
 using namespace std;
 

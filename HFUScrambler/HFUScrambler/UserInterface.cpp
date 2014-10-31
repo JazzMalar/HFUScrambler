@@ -25,6 +25,9 @@ CUserInterface::CUserInterface(){
 		std::cin >> path;
 		std::cout << "Geben Sie den Schluessel an ein druecken Sie Enter:" << endl;
 		std::cin >> key;
+
+		control.encryptFile(path, key);
+
 	}
 	else if (opt_check==2)
 	{
@@ -34,9 +37,9 @@ CUserInterface::CUserInterface(){
 		std::cout << "Geben Sie den Schluessel ein und druecken Sie Enter:" << endl;
 		std::cin >> key;
 
+		control.decryptFile(path, key);
+
 	}
-
-
 }
 
 
